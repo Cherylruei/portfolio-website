@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexyen.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: $bg-color;
-  color: $font-color;
+  color: $color-white;
+  font-family: 'Poppins', 'cwTeXYen', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: $color-bg;
+  background-image: url('/src/assets/bg-texture.png');
+  background-repeat: repeat;
 }
