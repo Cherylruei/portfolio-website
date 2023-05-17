@@ -1,11 +1,16 @@
 // color
 $color-primary: #fdbe83;
+$color-primary-variant: #f19540;
 $color-secondary: #cba3b5;
 $color-bg: rgb(29 42 55);
 $color-bg-variant: #2c2c6c;
 $color-white: #ffffff;
+$color-light: rgba(255, 255, 255, 0.6);
 
 // container
 $container-width-lg: 75%;
 $container-width-md: 86%;
 $container-width-sm: 90%;
+
+// others
+$transition: all 400ms ease;
