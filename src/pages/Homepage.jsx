@@ -1,5 +1,11 @@
+import Header from '../components/header/Header';
+
 const Homepage = () => {
-  return <div>Homepage 你好啊</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Homepage;
