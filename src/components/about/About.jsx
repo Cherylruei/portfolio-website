@@ -4,7 +4,7 @@ import MeOutside from '../../assets/meOutside.jpg';
 const About = () => {
   return (
     <section id='about' className='container container_about'>
-      <div>
+      <div className='intro'>
         {/* eslint-disable-next-line  */}
         <h5>Hello I'm</h5>
         <h1>Ruei Chun Li</h1>

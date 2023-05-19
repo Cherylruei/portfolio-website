@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .name {
+    padding: 0.5rem;
+    width: 15rem;
+    height: 5rem;
+    object-fit: cover;
+    scale: 1.5;
+    background: linear-gradient(45deg, transparent, $color-secondary);
+    border-radius: 50%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 1rem;
+    a {
+      color: $color-primary;
+    }
+    a:hover {
+      color: $color-white;
+      background: #cba3b5b3;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+}

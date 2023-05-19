@@ -7,7 +7,7 @@
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   width: 25rem;
   height: 25rem;
-  border: 2rem solid ($color-secondary);
+  border: 2rem solid #cba3b5b3;
   margin: 2rem;
 }
 
@@ -15,4 +15,8 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.intro {
+  margin-top: 2rem;
 }
