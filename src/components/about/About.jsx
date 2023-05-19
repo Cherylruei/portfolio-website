@@ -1,15 +1,15 @@
 import CTA from './CTA';
 
-const Header = () => {
+const About = () => {
   return (
-    <header className='container'>
+    <section id='about' className='container'>
       {/* eslint-disable-next-line  */}
       <h5>Hello I'm</h5>
       <h1>Ruei Chun Li</h1>
       <h5>Front-End Engineer</h5>
       <CTA />
-    </header>
+    </section>
   );
 };
 
-export default Header;
+export default About;

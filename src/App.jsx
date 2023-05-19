@@ -1,23 +1,20 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './components/about/About';
 import './scss/main.scss';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import Homepage from './pages/homepage';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+import Portfolio from './components/portfolio/Portfolio';
+import Blog from './components/blog/Blog';
+import Contact from './components/contact/Contact';
+import Experiences from './components/experiences/Experiences';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <div>
-      <BrowserRouter basename={import.meta.env.VITE_BASE_URL}>
-        <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/blog' element={<Blog />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <Navbar />
+      <About />
+      <Experiences />
+      <Portfolio />
+      <Blog />
+      <Contact />
     </div>
   );
 }

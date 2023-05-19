@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import CV from '../../assets/CV.pdf';
 
 const CTA = () => {
@@ -8,7 +7,7 @@ const CTA = () => {
         Download CV
       </a>
       {/* eslint-disable-next-line  */}
-      <NavLink to='/contact'>Let's contact</NavLink>
+      <a href='#contact'>Contact me</a>
     </div>
   );
 };
