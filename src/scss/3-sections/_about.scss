@@ -1,0 +1,18 @@
+.container_about {
+  display: flex;
+  margin: 2rem;
+}
+
+.about_me_img {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  width: 25rem;
+  height: 25rem;
+  border: 2rem solid ($color-secondary);
+  margin: 2rem;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
