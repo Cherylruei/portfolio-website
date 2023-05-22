@@ -1,22 +1,52 @@
 .container_about {
   display: flex;
-  margin: 2rem;
+  justify-content: center;
 }
 
 .about_me_img {
-  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   width: 25rem;
   height: 25rem;
-  border: 2rem solid #cba3b5b3;
   margin: 2rem;
+  border-radius: 12rem 12rem 0 0;
+  box-shadow: 0 0 15px 10px $color-bg;
+  border: 0.8rem solid #cba3b5b3;
 }
 
 .cta {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .intro {
   margin-top: 2rem;
+}
+
+// ========== media query MD version ==================
+
+@media screen and (max-width: 1024px) {
+  .container_about {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-evenly;
+    gap: 0rem;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+  }
+  .about_me_img {
+    width: 50%;
+    border: 0.5rem solid #cba3b5b3;
+  }
+}
+
+// ========== media query SM version ==================
+
+@media screen and (max-width: 600px) {
+  .about_me_img {
+    border: 0.2rem solid #cba3b5b3;
+  }
 }
