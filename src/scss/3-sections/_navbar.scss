@@ -28,4 +28,49 @@
       border-radius: 50%;
     }
   }
+
+  .smlink {
+    display: none;
+  }
+}
+
+// ========== media query MD version ==================
+
+@media screen and (max-width: 1024px) {
+  .header .name {
+    display: none;
+  }
+  .navbar {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 1.2rem;
+    width: max-content;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    .link {
+      display: none;
+    }
+    .smlink {
+      display: block;
+    }
+    .icon {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    a {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}
+
+// ========== media query SM version ==================
+
+@media screen and (max-width: 600px) {
+  .header .name {
+    scale: 1;
+  }
 }
