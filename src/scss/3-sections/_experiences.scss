@@ -1,0 +1,27 @@
+.container_experiences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background: $color-bg-variant;
+  border: 0.8rem solid $color-secondary;
+  width: 25rem;
+  height: 20rem;
+  margin: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}

@@ -9,7 +9,7 @@
   margin: 2rem;
   border-radius: 12rem 12rem 0 0;
   box-shadow: 0 0 15px 10px $color-bg;
-  border: 0.8rem solid #cba3b5b3;
+  border: 0.8rem solid $color-secondary;
 }
 
 .cta {
@@ -43,7 +43,7 @@
   }
   .about_me_img {
     width: 50%;
-    border: 0.5rem solid #cba3b5b3;
+    border: 0.5rem solid $color-secondary;
   }
 }
 
@@ -51,6 +51,6 @@
 
 @media screen and (max-width: 600px) {
   .about_me_img {
-    border: 0.2rem solid #cba3b5b3;
+    border: 0.2rem solid $color-secondary;
   }
 }
