@@ -1,0 +1,49 @@
+.container_portfolio {
+  @include container-display;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.card {
+  background: $color-bg-variant;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  width: 18rem;
+  height: 22rem;
+  border-radius: 10%;
+}
+
+.title {
+  margin: 1rem;
+}
+
+.link {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.picture {
+  border-radius: 5%;
+}
+
+// ========== media query MD version ==================
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ========== media query SM version ==================
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 15rem;
+    height: 20rem;
+  }
+}

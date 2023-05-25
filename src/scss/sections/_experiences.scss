@@ -1,8 +1,6 @@
 .container_experiences {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include container-display;
+  align-content: center;
 }
 
 .skills {
@@ -28,9 +26,8 @@
 
 // ========== media query MD version ==================
 
-// @media screen and (max-width: 1024px) {
-
-// }
+@media screen and (max-width: 1024px) {
+}
 
 // ========== media query SM version ==================
 
