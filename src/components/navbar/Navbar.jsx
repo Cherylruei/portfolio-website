@@ -11,7 +11,7 @@ const Navbar = () => {
         <div>
           <img src={nameWhite} alt='name' className='name' />
         </div>
-        <navbar className='navbar'>
+        <div className='navbar'>
           <a href='#about' className='link'>
             About
           </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href='#contact' className='smlink'>
             <RiContactsLine />
           </a>
-        </navbar>
+        </div>
       </div>
     </>
   );
