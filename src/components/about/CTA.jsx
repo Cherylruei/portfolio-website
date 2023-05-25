@@ -7,7 +7,7 @@ const CTA = () => {
         Download CV
       </a>
       {/* eslint-disable-next-line  */}
-      <a href='#contact' className='btn btn-primary'>
+      <a href='#contact' className='btn btnPrimary'>
         Contact me
       </a>
     </div>

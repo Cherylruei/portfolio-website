@@ -1,8 +1,8 @@
-import { RiMedalLine } from "react-icons/ri";
+import { RiMedalLine } from 'react-icons/ri';
 
 const Experiences = () => {
   return (
-    <section id='experiences' className='container container_experiences'>
+    <section id='experiences' className='container containerExperiences'>
       <h2>What skills I have</h2>
       <h5>My Experiences</h5>
       <div className='skills'>

@@ -1,10 +1,11 @@
-@import 'helpers/_mixins';
-@import 'helpers/_variables';
+@import 'helpers/mixins';
+@import 'helpers/variables';
 
-@import 'basics/_reset';
-@import 'basics/_global';
+@import 'basics/reset';
+@import 'basics/global';
 
-@import 'sections/_about';
-@import 'sections/_navbar';
-@import 'sections/_experiences';
-@import 'sections/_portfolio';
+@import 'sections/about';
+@import 'sections/navbar';
+@import 'sections/experiences';
+@import 'sections/portfolio';
+@import 'sections/blog';

@@ -2,7 +2,7 @@ import todolist from '../../assets/todolist.jpg';
 
 const Portfolio = () => {
   return (
-    <section id='portfolio' className='container container_portfolio'>
+    <section id='portfolio' className='container containerPortfolio'>
       <h2>My Recent Work</h2>
       <h5>Portfolios</h5>
       <div className='projects'>
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
 function Project({ title, github, demo, picture }) {
   return (
-    <div className='card'>
+    <div className='project'>
       <img src={picture} alt='projectImg' className='picture' />
       <div>
         <h4 className='title'>
@@ -36,7 +36,7 @@ function Project({ title, github, demo, picture }) {
           <a href={github} className='btn'>
             Github
           </a>
-          <a href={demo} className='btn btn-primary'>
+          <a href={demo} className='btn btnPrimary'>
             Live Demo
           </a>
         </div>

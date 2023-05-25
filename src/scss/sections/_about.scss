@@ -1,9 +1,9 @@
-.container_about {
+.containerAbout {
   display: flex;
   justify-content: center;
 }
 
-.about_me_img {
+.aboutMeImg {
   width: 25rem;
   height: 25rem;
   margin: 2rem;
@@ -26,7 +26,7 @@
 // ========== media query MD version ==================
 
 @media screen and (max-width: 1024px) {
-  .container_about {
+  .containerAbout {
     display: grid;
     grid-template-columns: 1fr;
     align-content: space-evenly;
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
   }
-  .about_me_img {
+  .aboutMeImg {
     width: 50%;
     border: 0.5rem solid $color-secondary;
   }
@@ -50,7 +50,7 @@
 // ========== media query SM version ==================
 
 @media screen and (max-width: 600px) {
-  .about_me_img {
+  .aboutMeImg {
     border: 0.2rem solid $color-secondary;
   }
 }

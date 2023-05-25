@@ -1,0 +1,41 @@
+.containerBlog {
+  @include container-display;
+}
+
+.articles {
+  @include projects;
+}
+
+.article {
+  @include card;
+  height: 25rem;
+  border: 2px solid $color-secondary;
+  img {
+    border-radius: 5%;
+    width: 17rem;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.cardBody {
+  overflow: hidden;
+  height: 11rem;
+  margin: 0.5rem;
+  .cardText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+  }
+}
+
+.btnArticle {
+  background: $color-bg;
+  margin: 1rem;
+}
+
+.cardFooter {
+  color: $color-secondary;
+}

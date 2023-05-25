@@ -1,20 +1,12 @@
-.container_portfolio {
+.containerPortfolio {
   @include container-display;
 }
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 1rem;
+  @include projects;
 }
 
-.card {
-  background: $color-bg-variant;
-  margin: 0.5rem;
-  padding: 1.5rem;
-  width: 18rem;
-  height: 22rem;
-  border-radius: 10%;
+.project {
+  @include card;
 }
 
 .title {

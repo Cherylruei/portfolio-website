@@ -3,7 +3,7 @@ import MeOutside from '../../assets/meOutside.jpg';
 
 const About = () => {
   return (
-    <section id='about' className='container container_about'>
+    <section id='about' className='container containerAbout'>
       <div className='intro'>
         {/* eslint-disable-next-line  */}
         <h5>Hello I'm</h5>
@@ -12,7 +12,7 @@ const About = () => {
         <CTA />
       </div>
       <div className='picture'>
-        <img src={MeOutside} alt='meOutside' className='about_me_img' />
+        <img src={MeOutside} alt='meOutside' className='aboutMeImg' />
       </div>
     </section>
   );
