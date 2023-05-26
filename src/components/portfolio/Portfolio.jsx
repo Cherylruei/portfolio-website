@@ -1,4 +1,6 @@
-import todolist from '../../assets/todolist.jpg';
+import TPEL from '../../assets/TaipeiParkingLotsCover.png';
+import Twitter from '../../assets/twitterCover.png';
+import Cover from '../../assets/cover.jpg';
 
 const Portfolio = () => {
   return (
@@ -8,17 +10,17 @@ const Portfolio = () => {
       <div className='projects'>
         <Project
           title='Taipei Parking Lots'
-          github=''
-          demo=''
-          picture={todolist}
+          github='https://github.com/Cherylruei/taipei-parking-lots'
+          demo='https://cherylruei.github.io/taipei-parking-lots/'
+          picture={TPEL}
         />
-        <Project title='React Twitter' github='' demo='' picture={todolist} />
         <Project
-          title='Personal Website'
-          github=''
+          title='React Twitter'
+          github='https://github.com/LJBL22/react_twitter'
           demo=''
-          picture={todolist}
+          picture={Twitter}
         />
+        <Project title='Personal Website' github='' demo='' picture={Cover} />
       </div>
     </section>
   );
@@ -27,7 +29,9 @@ const Portfolio = () => {
 function Project({ title, github, demo, picture }) {
   return (
     <div className='project'>
-      <img src={picture} alt='projectImg' className='picture' />
+      <div className='projectImg'>
+        <img src={picture} alt='projectImg' />
+      </div>
       <div>
         <h4 className='title'>
           <b>{title}</b>

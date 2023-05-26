@@ -31,6 +31,7 @@ const Contact = () => {
           </article>
         </div>
         <form action=''>
+          <h4>Contact Form</h4>
           <input
             type='text'
             name='subject'
