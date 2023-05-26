@@ -20,12 +20,18 @@ const Portfolio = () => {
           demo=''
           picture={Twitter}
         />
-        <Project title='Personal Website' github='' demo='' picture={Cover} />
+        <Project
+          title='Personal Website'
+          github='https://github.com/Cherylruei/portfolio-website`'
+          demo=''
+          picture={Cover}
+        />
       </div>
     </section>
   );
 };
 
+// eslint-disable-next-line react/prop-types
 function Project({ title, github, demo, picture }) {
   return (
     <div className='project'>
