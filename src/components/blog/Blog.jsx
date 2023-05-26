@@ -7,8 +7,8 @@ const Blog = () => {
       className='
   container containerBlog'
     >
-      <h2>Read My Blog</h2>
       <h5>Blog</h5>
+      <h2>Read My Blog</h2>
       <div className='articles'>
         <Article />
         <Article />
@@ -28,9 +28,9 @@ function Article() {
         <h4 className='cardTitle'>This is the title</h4>
         <p className='cardText'>
           What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-          and typesetting industry. Lorem Ipsum has been the standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book.
+          and typesetting industry. Lorem Ipsum has been the standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book.
         </p>
         <button className='btn btnArticle'>Read more</button>
       </div>

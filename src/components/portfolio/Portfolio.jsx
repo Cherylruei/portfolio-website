@@ -3,8 +3,8 @@ import todolist from '../../assets/todolist.jpg';
 const Portfolio = () => {
   return (
     <section id='portfolio' className='container containerPortfolio'>
-      <h2>My Recent Work</h2>
       <h5>Portfolios</h5>
+      <h2>My Recent Work</h2>
       <div className='projects'>
         <Project
           title='Taipei Parking Lots'
