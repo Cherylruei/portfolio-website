@@ -39,3 +39,20 @@
 .cardFooter {
   color: $color-secondary;
 }
+
+// ========== media query MD version ==================
+
+@media screen and (max-width: 1024px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ========== media query SM version ==================
+
+@media screen and (max-width: 600px) {
+  .article {
+    width: 15rem;
+    height: auto;
+  }
+}
