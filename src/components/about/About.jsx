@@ -1,5 +1,5 @@
 import CTA from './CTA';
-import MeOutside from '../../assets/meOutside.jpg';
+import profilepic2 from '../../assets/profilepic2.png';
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
         <CTA />
       </div>
       <div className='picture'>
-        <img src={MeOutside} alt='meOutside' className='aboutMeImg' />
+        <img src={profilepic2} alt='profilePicture' className='aboutMeImg' />
       </div>
     </section>
   );

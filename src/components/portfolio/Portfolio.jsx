@@ -17,13 +17,13 @@ const Portfolio = () => {
         <Project
           title='React Twitter'
           github='https://github.com/LJBL22/react_twitter'
-          demo=''
+          demo='https://ljbl22.github.io/react_twitter/login'
           picture={Twitter}
         />
         <Project
           title='Personal Website'
           github='https://github.com/Cherylruei/portfolio-website`'
-          demo=''
+          demo='https://cherylruei.github.io/portfolio-website/'
           picture={Cover}
         />
       </div>
