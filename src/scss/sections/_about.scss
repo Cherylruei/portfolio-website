@@ -35,7 +35,7 @@
   }
 
   .intro {
-    padding-top: 4rem;
+    padding-top: 7rem;
   }
 
   .picture {
@@ -43,15 +43,22 @@
     justify-content: center;
   }
   .aboutMeImg {
-    width: 50%;
+    width: 15rem;
+    height: 15rem;
     border: 0.5rem solid $color-secondary;
+    margin: 3rem;
   }
 }
 
 // ========== media query SM version ==================
 
 @media screen and (max-width: 600px) {
+  .containerAbout {
+    padding: 0rem;
+  }
   .aboutMeImg {
-    border: 0.2rem solid $color-secondary;
+    width: 12rem;
+    height: 12rem;
+    border: 0.3rem solid $color-secondary;
   }
 }

@@ -1,55 +1,38 @@
-.header {
+.navbar {
   display: flex;
-  justify-content: space-between;
-
-  .name {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 2rem;
+  a {
+    color: $color-primary;
+  }
+  a:hover {
+    color: $color-white;
+    background: #cba3b5b3;
     padding: 0.5rem;
-    width: 15rem;
-    height: 5rem;
-    object-fit: cover;
-    scale: 1.5;
-    background: linear-gradient(45deg, transparent, $color-secondary);
     border-radius: 50%;
   }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2rem;
-    margin-right: 2rem;
-    a {
-      color: $color-primary;
-    }
-    a:hover {
-      color: $color-white;
-      background: #cba3b5b3;
-      padding: 0.5rem;
-      border-radius: 50%;
-    }
-  }
+}
 
-  .smlink {
-    display: none;
-  }
+.smlink {
+  display: none;
 }
 
 // ========== media query MD version ==================
 
 @media screen and (max-width: 1024px) {
-  .header .name {
-    display: none;
-  }
   .navbar {
     position: fixed;
     background: rgba(0, 0, 0, 0.3);
-    padding: 1rem 1.2rem;
+    padding: 1rem;
     width: max-content;
     z-index: 2;
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 3rem;  
+    border-radius: 3rem;
     backdrop-filter: blur(15px);
     .link {
       display: none;
@@ -68,10 +51,4 @@
   }
 }
 
-// ========== media query SM version ==================
 
-@media screen and (max-width: 600px) {
-  .header .name {
-    scale: 1;
-  }
-}
