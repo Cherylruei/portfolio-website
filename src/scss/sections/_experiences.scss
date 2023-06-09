@@ -3,19 +3,27 @@
   align-content: center;
 }
 
-.skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  background: $color-bg-variant;
-  border: 0.8rem solid $color-secondary;
-  width: 25rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 1rem;
-  gap: 1rem;
+.part {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.frontendSkills {
+  @include skill-layout;
+  height: 70%;
+}
+
+.otherSkills {
+  display: flex;
+  flex-direction: column;
+}
+
+.backend {
+  @include skill-layout;
+}
+.others {
+  @include skill-layout;
 }
 
 .skill {
@@ -39,5 +47,9 @@
     padding: 1rem;
     gap: 0.5rem;
     border: 0.4rem solid $color-secondary;
+  }
+
+  .part {
+    flex-direction: column;
   }
 }
