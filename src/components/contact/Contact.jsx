@@ -1,8 +1,30 @@
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsLinkedin } from 'react-icons/bs';
 import { RiMessengerLine } from 'react-icons/ri';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_eio5kiu',
+        'template_npcxsgi',
+        form.current,
+        `${import.meta.env.VITE_EMAILJS_PUBLIC_KEY}`
+      )
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  };
+
   return (
     <section id='contact' className='container'>
       <h5>Get in Touch</h5>
@@ -30,7 +52,7 @@ const Contact = () => {
             <a href='http://m.me/cheryl.lee.33671'>Send me a message</a>
           </article>
         </div>
-        <form action=''>
+        <form ref={form} onSubmit={sendEmail}>
           <h4>Contact Form</h4>
           <input
             type='text'
