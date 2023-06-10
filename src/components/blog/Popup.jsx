@@ -1,8 +1,8 @@
-const Popup = ({ trigger, setTrigger, children }) => {
-  return trigger ? (
+const Popup = ({ popupWindow, children, onPopupClick }) => {
+  return popupWindow ? (
     <div className='popup'>
       <div className='popup-inner'>
-        <button className='btn close-btn' onClick={() => setTrigger(!trigger)}>
+        <button className='btn close-btn' onClick={onPopupClick}>
           x
         </button>
         {children}

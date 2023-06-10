@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Data from './Data';
 import Popup from './Popup';
 
@@ -14,7 +14,7 @@ const Content = () => {
 
 export default Content;
 
-function CardModel({ title, text, popupWindow, setPopupWindow, mainImage }) {
+function CardModel({ title, text, popupWindow, mainImage, onPopupClick }) {
   useEffect(() => {
     const html = document.querySelector('html');
     html.style.overflow = popupWindow ? 'hidden' : 'scroll';
@@ -26,12 +26,7 @@ function CardModel({ title, text, popupWindow, setPopupWindow, mainImage }) {
       <div className='cardBody'>
         <h4 className='cardTitle'>{title}</h4>
         <p className='cardText'>{text}</p>
-        <button
-          className='btn btnArticle'
-          onClick={() => {
-            setPopupWindow(!popupWindow);
-          }}
-        >
+        <button className='btn btnArticle' onClick={onPopupClick}>
           Read more
         </button>
       </div>
@@ -41,6 +36,7 @@ function CardModel({ title, text, popupWindow, setPopupWindow, mainImage }) {
 
 function Article01() {
   const [popupWindow, setPopupWindow] = useState(false);
+  const popupRef = useRef();
   const title = Data[0].title;
   const text = Data[0].content;
   const mainImage01 = Data[0].mainImage;
@@ -59,6 +55,9 @@ function Article01() {
   const paragraph10 = text[10].split('.');
   const paragraph11 = text[11].split('.');
   const paragraph12 = text[12].split(',');
+  const onPopupClick = () => {
+    setPopupWindow(!popupWindow);
+  };
 
   return (
     <>
@@ -68,8 +67,13 @@ function Article01() {
         popupWindow={popupWindow}
         setPopupWindow={setPopupWindow}
         mainImage={mainImage01}
+        onPopupClick={onPopupClick}
       />
-      <Popup trigger={popupWindow} setTrigger={setPopupWindow}>
+      <Popup
+        popupWindow={popupWindow}
+        setPopupWindow={setPopupWindow}
+        onPopupClick={onPopupClick}
+      >
         <h3 className='articleTitle'>{title}</h3>
         <br />
         <p className='articleText'>
@@ -185,6 +189,10 @@ function Article02() {
   const paragraph03 = text[2].split(',');
   const paragraph06 = text[5].split(',');
 
+  const onPopupClick = () => {
+    setPopupWindow(!popupWindow);
+  };
+
   return (
     <>
       <CardModel
@@ -193,8 +201,13 @@ function Article02() {
         popupWindow={popupWindow}
         setPopupWindow={setPopupWindow}
         mainImage={mainImage02}
+        onPopupClick={onPopupClick}
       />
-      <Popup trigger={popupWindow} setTrigger={setPopupWindow}>
+      <Popup
+        popupWindow={popupWindow}
+        setPopupWindow={setPopupWindow}
+        onPopupClick={onPopupClick}
+      >
         <h3 className='articleTitle'>{title}</h3>
         <br />
         <div className='img'>
@@ -270,6 +283,10 @@ function Article03() {
   const paragraph03 = text[2].split(',');
   const paragraph04 = text[3].split(',');
 
+  const onPopupClick = () => {
+    setPopupWindow(!popupWindow);
+  };
+
   return (
     <>
       <CardModel
@@ -278,8 +295,13 @@ function Article03() {
         popupWindow={popupWindow}
         setPopupWindow={setPopupWindow}
         mainImage={mainImage03}
+        onPopupClick={onPopupClick}
       />
-      <Popup trigger={popupWindow} setTrigger={setPopupWindow}>
+      <Popup
+        popupWindow={popupWindow}
+        setPopupWindow={setPopupWindow}
+        onPopupClick={onPopupClick}
+      >
         <h3 className='articleTitle'>{title}</h3>
         <br />
         <p className='articleText'>{text[0]}</p>
