@@ -35,6 +35,9 @@
 // ========== media query MD version ==================
 
 @media screen and (max-width: 1024px) {
+  .part {
+    flex-direction: column;
+  }
 }
 
 // ========== media query SM version ==================
@@ -47,9 +50,5 @@
     padding: 1rem;
     gap: 0.5rem;
     border: 0.4rem solid $color-secondary;
-  }
-
-  .part {
-    flex-direction: column;
   }
 }

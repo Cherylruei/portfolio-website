@@ -73,6 +73,7 @@
   background: #ffecdb;
   color: $color-bg;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 
   .close-btn {
     position: absolute;
@@ -95,7 +96,7 @@
 
 .img {
   margin: 0 auto;
-  width: 35rem;
+  width: 100%;
   height: auto;
 }
 

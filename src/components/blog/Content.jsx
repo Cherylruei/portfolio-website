@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Data from './Data';
 import Popup from './Popup';
 
@@ -15,6 +15,11 @@ const Content = () => {
 export default Content;
 
 function CardModel({ title, text, popupWindow, setPopupWindow, mainImage }) {
+  useEffect(() => {
+    const html = document.querySelector('html');
+    html.style.overflow = popupWindow ? 'hidden' : 'scroll';
+  }, [popupWindow]);
+
   return (
     <div className='article'>
       <img src={mainImage} alt='' />
