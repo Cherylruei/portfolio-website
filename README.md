@@ -11,15 +11,43 @@ For this project, I utilized Vite, React and SCSS. In React, I utilized hooks su
 
 ## :desktop_computer:	Responsive Web Design Pictures
 
-![MD cover](https://github.com/Cherylruei/portfolio-website/assets/117626038/c91ad35a-519f-45a5-87f6-7a0f21333777)
-
 ![RWD Cover](https://github.com/Cherylruei/portfolio-website/assets/117626038/7bf0de68-6ece-47db-8a91-23b20d85fc84)
 
 ## :wrench: Develop environment & tools
 
 node.js @16.18.1
-axios @1.3.4
+vite @4.3.2
 react @18.2.0
-react-dom @18.2.0
+sass @1.62.1
+react-icons @4.8.0
+@emailjs/browser @3.11.0
 
 ## :computer: Installation 
+
+```
+node -v
+```
+
+Clone the project to local
+
+```
+git clone https://github.com/Cherylruei/portfolio-website.git
+```
+
+Go to the directory
+
+```
+cd taipei-parking-lots
+```
+
+Install npm
+
+```
+npm install
+```
+
+Start the project
+
+```
+npm start
+```
