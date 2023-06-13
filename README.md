@@ -37,7 +37,7 @@ git clone https://github.com/Cherylruei/portfolio-website.git
 Go to the directory
 
 ```
-cd taipei-parking-lots
+cd portfolio-website
 ```
 
 Install npm
