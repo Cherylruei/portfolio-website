@@ -1,15 +1,17 @@
 .containerExperiences {
   @include container-display;
-  align-content: center;
 }
 
 .part {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 1rem;
+  h4 {
+    text-align: start;
+  }
 }
 
-.frontendSkills {
+.frontend {
   @include skill-layout;
   height: 70%;
 }
@@ -30,13 +32,19 @@
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  align-items: center;
+}
+
+.medal {
+  width: 20px;
+  height: 20px;
 }
 
 // ========== media query MD version ==================
 
 @media screen and (max-width: 1024px) {
-  .part {
-    flex-direction: column;
+  h4 {
+    text-wrap: balance;
   }
 }
 
